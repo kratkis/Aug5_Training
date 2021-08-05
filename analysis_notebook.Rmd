@@ -40,7 +40,7 @@ ggplotly(plot)
 ```{r}
 ad_treatmentnew <- ad_treatment %>%
  filter(age >= 81L & age <= 85L) %>%
- filter(mmse >= 15 & mmse <= 
+ filter(mmse >= 20 & mmse <= 
     28.8) %>%
  ggplot() +
  aes(x = age, group = health_status) +
